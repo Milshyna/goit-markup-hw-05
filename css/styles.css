@@ -109,6 +109,22 @@ body {
 .link.link-mail:focus {
   color: var(--accent-text-color);
 }
+.header-link-item {
+  position: relative;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.link.curren::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+
+  position: absolute;
+  bottom: 0;
+}
 
 .flex-header-nav,
 .navigation,
@@ -116,8 +132,8 @@ body {
   display: flex;
 }
 .flex-header {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 .flex-header-nav,
@@ -140,6 +156,8 @@ body {
 .flex-contact-item {
   display: flex;
   align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .flex-tel-icon {
   width: 10px;
@@ -273,6 +291,29 @@ body {
 }
 .img-work-item:not(:last-child) {
   margin-right: 30px;
+}
+.img-position {
+  position: relative;
+}
+.work-position {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding-top: 27px;
+  padding-left: 27px;
+}
+.text-work-item {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+  text-align: center;
 }
 /* ----------------Команда------------------------------------ */
 .comand {
@@ -486,6 +527,26 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+.portfolio-position {
+  position: relative;
+}
+.portfolio-text-posinion {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+}
+.portfolio-text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+}
+
 /* ----------------------Footer---------------------------- */
 .footer {
   background: var(--darck-background);
