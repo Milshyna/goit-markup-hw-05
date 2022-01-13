@@ -70,7 +70,9 @@
             <h1 class="hero-title">
               Эффективные решения <br />для вашего бизнеса
             </h1>
-            <button type="button" class="hero-button">Заказать услугу</button>
+            <button type="button" class="hero-button" data-modal-open>
+              Заказать услугу
+            </button>
           </div>
         </section>
       </div>
@@ -455,5 +457,14 @@
         </div>
       </div>
     </footer>
+    <!--Модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="btn-modal" data-modal-close>
+          <svg><use href="./image/iconmoon.svg#icon-crest"></use></svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
